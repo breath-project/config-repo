@@ -3,3 +3,10 @@ spring:
     admin:
       client:
         url: "http://localhost:8765"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        #        include: refresh
+        include: "*"
